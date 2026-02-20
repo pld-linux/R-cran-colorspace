@@ -3,7 +3,7 @@
 Summary:	Color Space Manipulation
 Name:		R-cran-%{modulename}
 Version:	1.2r4
-Release:	1
+Release:	2
 License:	BSD
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
