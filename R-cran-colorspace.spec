@@ -1,14 +1,15 @@
 %define		fversion	%(echo %{version} |tr r -)
 %define		modulename	colorspace
+%undefine	_debugsource_packages
 Summary:	Color Space Manipulation
 Name:		R-cran-%{modulename}
 Version:	1.2r4
-Release:	2
+Release:	3
 License:	BSD
 Group:		Applications/Math
-Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{fversion}.tar.gz
+Source0:	https://cran.r-project.org/src/contrib/%{modulename}_%{fversion}.tar.gz
 # Source0-md5:	1f9a05587ffae27fc3e4da7503d016fc
-URL:		http://cran.fhcrc.org/web/packages/colorspace/index.html
+URL:		https://cran.r-project.org/web/packages/colorspace/index.html
 BuildRequires:	R >= 2.8.1
 Requires(post,postun):	R >= 2.8.1
 Requires(post,postun):	perl-base
